@@ -41,12 +41,6 @@ The provided Makefile includes several targets for managing the project. Use the
   make up
   ```
 
-- **Alternatively, build and start in one step:**
-
-  ```bash
-  make build-up
-  ```
-
 ### 4. Stopping the Services
 
 To stop and remove the containers, run:
@@ -62,13 +56,19 @@ The Makefile also provides extra commands for administrative tasks:
 - **Create a Site Administrator:**  
   Ensure you have set `MASTER_EMAIL`, `MASTER_PASSWORD`, and `ORGANIZATION_NAME` in your `.env` file, then run:
   ```bash
-  make create-site-admin
+  make ll-create-site-admin
   ```
 
 - **Disable Website Registration:**  
   Run:
   ```bash
-  make disable-register
+  make ll-disable-register
+  ```
+
+- **Alternatively, run both in one step:**
+  Run:
+  ```bash
+  make ll-init
   ```
 
 ## Customization
