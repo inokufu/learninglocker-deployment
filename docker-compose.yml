@@ -61,10 +61,6 @@ services:
       - MONGO_URL
       - MONGO_DB
       - REDIS_URL
-      # NOTE: Do I need to do this ?
-      # - MONGO_URL=${LL_MONGO_URL}
-      # - MONGO_DB=${LL_MONGO_DB}
-      # - REDIS_URL=${LL_REDIS_URL}
     depends_on:
       mongo:
         condition: service_healthy

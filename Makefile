@@ -36,7 +36,7 @@ logs:
 	$(GLOBAL_COMPOSE_CMD) logs -f
 
 ll-create-admin:
-	$(LL_API_EXEC) createSiteAdmin ${LL_MASTER_EMAIL} ${LL_ORGANIZATION_NAME} ${LL_MASTER_PASSWORD}
+	$(LL_API_EXEC) createSiteAdmin "${MASTER_EMAIL}" "${ORGANIZATION_NAME}" "${MASTER_PASSWORD}"
 
 ll-disable-register:
 	$(LL_API_EXEC) disableRegister
