@@ -61,6 +61,7 @@ services:
       - MONGO_URL
       - MONGO_DB
       - REDIS_URL
+      - EXPRESS_PORT=${API_PORT}
     depends_on:
       mongo:
         condition: service_healthy
